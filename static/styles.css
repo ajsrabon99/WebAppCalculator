@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff00d4, #ff6200);
+    margin: 0;
+}
+
+.calculator {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input, select {
+    margin: 10px;
+    padding: 12px;
+    width: 90%;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #ff01d9;
+    box-shadow: 0px 0px 8px rgba(255, 1, 217, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #ff01d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #bf0a86;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.logo {
+    width: 130px; 
+    height: auto;
+    max-height: 100px;
+    border-radius: 10px; 
+    object-fit: contain;
+    box-shadow: 0px 4px 10px rgba(255, 1, 217, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.05); 
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff01d9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.logo-container, .brand-name {
+    display: none;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .calculator {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    input, select, button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
